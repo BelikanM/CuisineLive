@@ -1,0 +1,166 @@
+/* Styles de base pour la section de contenu */
+.content-section {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  min-height: calc(100vh - 60px); /* Hauteur ajustée pour laisser de la place à la nav */
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.content-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.action-btn:first-child {
+  background: none;
+  color: #000;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.subscribe-btn {
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  background: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Styles pour la barre de navigation inférieure */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo h1 {
+  font-size: 20px;
+  font-family: 'Pacifico', cursive; /* Police stylisée comme dans Pexels */
+  margin: 0;
+}
+
+.nav-options {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-options a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.nav-options a:hover {
+  color: #4caf50;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.install-btn {
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  background: #4caf50;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.install-btn:hover {
+  background: #45a049;
+}
+
+/* Design responsive pour téléphones */
+@media (max-width: 768px) {
+  .bottom-nav {
+    padding: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-logo h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .nav-options a {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .install-btn {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .content-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo h1 {
+    font-size: 16px;
+  }
+
+  .nav-options a {
+    font-size: 10px;
+  }
+
+  .install-btn {
+    font-size: 8px;
+    padding: 3px 8px;
+  }
+}
